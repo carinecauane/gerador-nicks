@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Estudos - Odontologia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header class="header">
+      <div class="icon-wrapper">
+        <span class="icon">🦷</span>
+      </div>
+      <h1>Meta Odonto</h1>
+      <p class="subtitle">O seu foco diário rumo à aprovação no vestibular</p>
+      <p class="motivational-phrase">"O sucesso é a soma de pequenos esforços repetidos dia após dia."</p>
+    </header>
+
+    <div class="main-grid">
+      <!-- Coluna da Esquerda: Configurações -->
+      <div class="preferences-card">
+        <h3>⚡ Configuração de Estudos</h3>
+        
+        <div class="form-group">
+          <label for="prioritySelect">Sua maior prioridade / Dificuldade:</label>
+          <select id="prioritySelect">
+            <option value="todas">Todas as matérias (Geral)</option>
+            <option value="Biologia">Biologia (Peso Alto)</option>
+            <option value="Química">Química (Peso Alto)</option>
+            <option value="Física">Física</option>
+            <option value="Matemática">Matemática</option>
+            <option value="Redação">Redação</option>
+            <option value="Humanas">Humanas</option>
+          </select>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="hideStudiedCheck">
+          <label for="hideStudiedCheck">Ocultar temas que já estudei</label>
+        </div>
+
+        <button id="btnGerar" type="button" class="btn-pulse">🎯 Gerar Tópico Recomendado</button>
+      </div>
+
+      <!-- Coluna da Direita: Resultado -->
+      <div class="result-container">
+        <div class="result-box" id="resultBox">
+          <div class="badge-highlight">💡 Sugestão do Dia</div>
+          <span class="subject-tag" id="subjectTag">Pronto?</span>
+          <div class="topic-title" id="topicTitle">Ajuste as preferências e clique no botão para Sortear!</div>
+          
+          <div class="action-row" id="actionRow" style="display: none;">
+            <a id="studyLink" href="#" target="_blank" rel="noopener noreferrer" class="btn-study">
+              🚀 Acessar Material de Estudo
+            </a>
+            
+            <label class="toggle-studied">
+              <input type="checkbox" id="markStudiedCheck">
+              <span>Marcar como Estudado</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Barra de Progresso -->
+        <div class="progress-container">
+          <span id="progressText">Progresso Geral: 0 / 0 estudados (0%)</span>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <button class="btn-reset" id="btnReset" type="button">Resetar Conteúdos Estudados</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção de Recursos de Destaque -->
+    <div class="features-row">
+      <div class="feature-card">
+        <span class="feature-icon">📚</span>
+        <h4>Links Diretos</h4>
+        <p>Acesse rapidamente textos e resumos para estudar cada tema sorteado.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🎯</span>
+        <h4>Foco Direcionado</h4>
+        <p>Filtre pelas matérias de maior peso no vestibular de Odontologia.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">📊</span>
+        <h4>Controle Visual</h4>
+        <p>Acompanhe sua porcentagem de progresso salva automaticamente.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
