@@ -3,9 +3,9 @@
     --primary-hover: #0369a1;
     --bg-gradient-start: #0f172a;
     --bg-gradient-end: #1e3a8a;
-    --card-bg: #ffffff;
-    --text-color: #1e293b;
-    --accent: #ef4444;
+    --card-bg: #a4d5e9;
+    --text-color: #04080f;
+    --accent: #000000;
     --border-color: #cbd5e1;
   }
   
@@ -70,14 +70,14 @@
   
   p.subtitle {
     font-size: 16px;
-    color: #64748b;
+    color: #000000;
     margin-bottom: 8px;
   }
   
   p.motivational-phrase {
     font-size: 15px;
     font-style: italic;
-    color: #0284c7;
+    color: #082864;
     font-weight: 600;
   }
   
@@ -91,8 +91,8 @@
   }
   
   .preferences-card {
-    background-color: #f0f9ff;
-    border: 2px solid #bae6fd;
+    background-color: #0d9ff3bd;
+    border: 2px solid #8cc3e0;
     border-radius: 16px;
     padding: 28px;
     display: flex;
@@ -147,7 +147,7 @@
   
   button#btnGerar {
     background: linear-gradient(135deg, #0284c7, #2563eb);
-    color: white;
+    color: rgb(255, 254, 254);
     border: none;
     padding: 16px 20px;
     font-size: 16px;
@@ -176,7 +176,7 @@
   }
   
   .result-box {
-    background-color: #ffffff;
+    background-color: #0d9ff3bd;
     border: 2px dashed var(--primary);
     border-radius: 16px;
     padding: 28px;
@@ -192,7 +192,7 @@
   .badge-highlight {
     position: absolute;
     top: -12px;
-    background-color: #f59e0b;
+    background-color: #0c1a9b;
     color: white;
     font-size: 11px;
     font-weight: bold;
@@ -234,7 +234,7 @@
   
   .btn-study {
     display: inline-block;
-    background-color: #10b981;
+    background-color: #26a81b;
     color: white;
     text-decoration: none;
     font-size: 14px;
@@ -260,7 +260,7 @@
   }
   
   .progress-container {
-    background-color: #f8fafc;
+    background-color: #0d9ff3bd;
     padding: 20px;
     border-radius: 16px;
     border: 1px solid #e2e8f0;
@@ -268,7 +268,7 @@
   
   #progressText {
     font-size: 13px;
-    color: #475569;
+    color: #000000;
     font-weight: 600;
     display: block;
     margin-bottom: 8px;
